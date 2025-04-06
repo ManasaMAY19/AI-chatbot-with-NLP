@@ -51,41 +51,77 @@ lemmatizer = WordNetLemmatizer()
 # Define patterns and responses for the chatbot
 
 pairs = [
+
+
     [
+    
         r"hi|hello|hey",
+        
         ["Hello!", "Hi there!", "Hey! How can I help you today?"]
     ],
+    
+    
     [
+    
         r"what is your name",
+        
         ["I'm a chatbot created with NLTK.", "You can call me NLTKBot!"]
     ],
+    
+    
     [
+    
         r"how are you",
+        
         ["I'm doing well, thank you!", "I'm good, how about you?"]
     ],
+    
+    
     [
+   
         r"what can you do",
+        
         ["I can answer simple questions, have a conversation, or help with basic information."]
     ],
+    
+    
     [
+    
         r"(.*) weather (.*)",
+        
         ["I'm sorry, I don't have access to real-time weather data."]
     ],
+    
+    
     [
+    
         r"(.*) (help|assist) (.*)",
+        
         ["I'll do my best to help you. What do you need assistance with?"]
     ],
+    
+    
     [
+    
         r"quit|exit|bye",
+        
         ["Goodbye!", "It was nice talking to you. Bye!", "See you later!"]
     ],
+    
+    
     [
+    
         r"(.*)",
+        
         ["I'm not sure I understand. Could you rephrase that?", 
+        
          "Interesting. Tell me more.",
+         
          "I see. Can you elaborate on that?"]
     ]
+    
 ]
+
 
 # Create the chatbot
 
